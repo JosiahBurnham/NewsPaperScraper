@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Email_Paper</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#4287f5">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Email_Paper</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cjjbur%5Cdesktop%5Cnewspaper%5Cresources%5Cemail_paper.py">c:\users\jjbur\desktop\newspaper\resources\email_paper.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#23cc3c">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#23cc3c"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="email.encoders.html">email.encoders</a><br>
+</td><td width="25%" valign=top><a href="pathlib.html">pathlib</a><br>
+</td><td width="25%" valign=top><a href="smtplib.html">smtplib</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#878787">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#878787"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Email_Paper.html#EmailHelper">EmailHelper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eb1a1a">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="EmailHelper">class <strong>EmailHelper</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#eb1a1a"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="EmailHelper-send_email"><strong>send_email</strong></a>(email_recipient, email_subject, email_message, attachment_location='')</dt><dd><tt>sends&nbsp;an&nbsp;email<br>
+&nbsp;<br>
+Sends&nbsp;and&nbsp;email&nbsp;using&nbsp;SMTP&nbsp;with&nbsp;a&nbsp;google&nbsp;account.<br>
+&nbsp;<br>
+:param&nbsp;email_recipient:<br>
+&nbsp;the&nbsp;recipient&nbsp;of&nbsp;the&nbsp;email<br>
+:param&nbsp;email_subject:<br>
+&nbsp;the&nbsp;subject&nbsp;of&nbsp;the&nbsp;email<br>
+:param&nbsp;email_message:<br>
+&nbsp;the&nbsp;message&nbsp;in&nbsp;the&nbsp;email<br>
+:param&nbsp;attachment_location:<br>
+&nbsp;the&nbsp;PATH&nbsp;to&nbsp;the&nbsp;attachment&nbsp;being&nbsp;sent<br>
+&nbsp;<br>
+:return:&nbsp;True</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-stat"><strong>stat</strong></a>(path, *, dir_fd=None, follow_symlinks=True)</dt><dd><tt>Perform&nbsp;a&nbsp;stat&nbsp;system&nbsp;call&nbsp;on&nbsp;the&nbsp;given&nbsp;path.<br>
+&nbsp;<br>
+&nbsp;&nbsp;path<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Path&nbsp;to&nbsp;be&nbsp;examined;&nbsp;can&nbsp;be&nbsp;string,&nbsp;bytes,&nbsp;a&nbsp;path-like&nbsp;<a href="builtins.html#object">object</a>&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;open-file-descriptor&nbsp;int.<br>
+&nbsp;&nbsp;dir_fd<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;not&nbsp;None,&nbsp;it&nbsp;should&nbsp;be&nbsp;a&nbsp;file&nbsp;descriptor&nbsp;open&nbsp;to&nbsp;a&nbsp;directory,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;path&nbsp;should&nbsp;be&nbsp;a&nbsp;relative&nbsp;string;&nbsp;path&nbsp;will&nbsp;then&nbsp;be&nbsp;relative&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;that&nbsp;directory.<br>
+&nbsp;&nbsp;follow_symlinks<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;False,&nbsp;and&nbsp;the&nbsp;last&nbsp;element&nbsp;of&nbsp;the&nbsp;path&nbsp;is&nbsp;a&nbsp;symbolic&nbsp;link,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stat&nbsp;will&nbsp;examine&nbsp;the&nbsp;symbolic&nbsp;link&nbsp;itself&nbsp;instead&nbsp;of&nbsp;the&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;link&nbsp;points&nbsp;to.<br>
+&nbsp;<br>
+dir_fd&nbsp;and&nbsp;follow_symlinks&nbsp;may&nbsp;not&nbsp;be&nbsp;implemented<br>
+&nbsp;&nbsp;on&nbsp;your&nbsp;platform.&nbsp;&nbsp;If&nbsp;they&nbsp;are&nbsp;unavailable,&nbsp;using&nbsp;them&nbsp;will&nbsp;raise&nbsp;a<br>
+&nbsp;&nbsp;NotImplementedError.<br>
+&nbsp;<br>
+It's&nbsp;an&nbsp;error&nbsp;to&nbsp;use&nbsp;dir_fd&nbsp;or&nbsp;follow_symlinks&nbsp;when&nbsp;specifying&nbsp;path&nbsp;as<br>
+&nbsp;&nbsp;an&nbsp;open&nbsp;file&nbsp;descriptor.</tt></dd></dl>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Make_Paper</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#4287f5">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Make_Paper</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cjjbur%5Cdesktop%5Cnewspaper%5Cresources%5Cmake_paper.py">c:\users\jjbur\desktop\newspaper\resources\make_paper.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#23cc3c">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#23cc3c"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="docx.html">docx</a><br>
+<a href=".html"></a><br>
+</td><td width="25%" valign=top><a href="pathlib.html">pathlib</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#878787">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#878787"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Make_Paper.html#MakePaper">MakePaper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eb1a1a">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MakePaper">class <strong>MakePaper</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#eb1a1a"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;is&nbsp;a&nbsp;web&nbsp;scraper&nbsp;that&nbsp;makes&nbsp;a&nbsp;newspaper&nbsp;from&nbsp;newsites&nbsp;that&nbsp;have&nbsp;all&nbsp;the&nbsp;necessary<br>
+html&nbsp;information&nbsp;in&nbsp;excel&nbsp;spreadsheets&nbsp;that&nbsp;are&nbsp;read&nbsp;using&nbsp;pandas.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MakePaper-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>initializes&nbsp;the&nbsp;document,&nbsp;data&nbsp;frames,&nbsp;and&nbsp;sets&nbsp;the&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="MakePaper-add_articles"><strong>add_articles</strong></a>(self)</dt><dd><tt>adds&nbsp;all&nbsp;the&nbsp;articles&nbsp;to&nbsp;the&nbsp;document<br>
+&nbsp;<br>
+goes&nbsp;through&nbsp;each&nbsp;news&nbsp;site&nbsp;in&nbsp;the&nbsp;News_Paper_links&nbsp;excel&nbsp;file&nbsp;and&nbsp;get&nbsp;the&nbsp;article&nbsp;titles,<br>
+&nbsp;images,&nbsp;and&nbsp;first&nbsp;paragraph,&nbsp;and&nbsp;then&nbsp;adds&nbsp;them&nbsp;to&nbsp;the&nbsp;document.<br>
+&nbsp;<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<dl><dt><a name="MakePaper-add_standalone_images"><strong>add_standalone_images</strong></a>(self)</dt><dd><tt>adds&nbsp;images&nbsp;that&nbsp;are&nbsp;their&nbsp;own&nbsp;feature&nbsp;to&nbsp;the&nbsp;document.<br>
+&nbsp;<br>
+Adds&nbsp;all&nbsp;of&nbsp;the&nbsp;standalone&nbsp;pictures&nbsp;to&nbsp;the&nbsp;document&nbsp;like&nbsp;the&nbsp;daily&nbsp;forecast,&nbsp;and&nbsp;tide&nbsp;chart.<br>
+&nbsp;<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<dl><dt><a name="MakePaper-get_date"><strong>get_date</strong></a>(self)</dt><dd><tt>Gets&nbsp;today's&nbsp;date<br>
+&nbsp;<br>
+:return:&nbsp;a&nbsp;string&nbsp;of&nbsp;today's&nbsp;date&nbsp;in&nbsp;the&nbsp;standard&nbsp;US&nbsp;format&nbsp;(MM/DD/YYYY)</tt></dd></dl>
+
+<dl><dt><a name="MakePaper-make_paper"><strong>make_paper</strong></a>(self)</dt><dd><tt>makes&nbsp;the&nbsp;document&nbsp;and&nbsp;saves&nbsp;it.<br>
+&nbsp;<br>
+This&nbsp;just&nbsp;combines&nbsp;all&nbsp;the&nbsp;previous&nbsp;methods&nbsp;to&nbsp;add&nbsp;all&nbsp;the&nbsp;information&nbsp;to&nbsp;the&nbsp;document.<br>
+It&nbsp;then&nbsp;saves&nbsp;the&nbsp;document.<br>
+&nbsp;<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<dl><dt><a name="MakePaper-save_standalone_images"><strong>save_standalone_images</strong></a>(self)</dt><dd><tt>save&nbsp;images&nbsp;that&nbsp;are&nbsp;a&nbsp;feature&nbsp;by&nbsp;themselves<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;image&nbsp;links&nbsp;and&nbsp;titles&nbsp;that&nbsp;that&nbsp;are&nbsp;standalone&nbsp;in&nbsp;the&nbsp;news&nbsp;paper&nbsp;from&nbsp;the&nbsp;excel&nbsp;file.<br>
+It&nbsp;then&nbsp;uses&nbsp;the&nbsp;links&nbsp;and&nbsp;titles&nbsp;in&nbsp;<a href="#MakePaper-get_image">get_image</a>().<br>
+&nbsp;<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="MakePaper-get_image"><strong>get_image</strong></a>(link, picture_name)</dt><dd><tt>gets&nbsp;downloads&nbsp;and&nbsp;image&nbsp;from&nbsp;a&nbsp;link<br>
+&nbsp;<br>
+Uses&nbsp;requests&nbsp;to&nbsp;download&nbsp;the&nbsp;images&nbsp;from&nbsp;the&nbsp;link.<br>
+Then&nbsp;saves&nbsp;the&nbsp;pictures&nbsp;to&nbsp;the&nbsp;Images&nbsp;folder&nbsp;in&nbsp;the&nbsp;same&nbsp;directory.<br>
+&nbsp;<br>
+:param&nbsp;link:&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;picture&nbsp;to&nbsp;download&nbsp;it.<br>
+:param&nbsp;picture_name:&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;file&nbsp;to&nbsp;save&nbsp;to&nbsp;in&nbsp;Images&nbsp;directory.<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
